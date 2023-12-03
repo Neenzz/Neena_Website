@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nitha's Home Baked Cakes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <div id="brand">
+            <div id="logo">&#x1F382;</div>
+            <div id="brand-name">N&N</div>
+        </div>
+        <h1>Nitha's Home Baked Cakes</h1>
+        <p class="subtitle">Baked with Love!</p>
+        <div id="card">
+            <span id="phone-icon">&#x260E;</span>
+            <span id="phone-number">604-9062942</span>
+        </div>
+    </header>
+
+    <section id="cart">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button onclick="checkout()">Checkout</button>
+    </section>
+
+    <section id="menu">
+        <div class="cake-item">
+            <h3>Chocolate Cake</h3>
+            <p>A rich and moist chocolate cake.</p>
+            <img src="chocolate-cake.jpg" alt="Chocolate Cake">
+            <p class="price">$20.00</p>
+            <button onclick="addToCart('Chocolate Cake')">Add to Cart</button>
+        </div>
+
+        <div class="cake-item">
+            <h3>Truffle Cake</h3>
+            <p>A decadent truffle-flavored cake.</p>
+            <img src="truffle-cake.jpg" alt="Truffle Cake">
+            <p class="price">$25.00</p>
+            <button onclick="addToCart('Truffle Cake')">Add to Cart</button>
+        </div>
+
+        <div class="cake-item">
+            <h3>Red Velvet Cake</h3>
+            <p>A classic red velvet cake with cream cheese frosting.</p>
+            <img src="red-velvet-cake.jpg" alt="Red Velvet Cake">
+            <p class="price">$22.00</p>
+            <button onclick="addToCart('Red Velvet Cake')">Add to Cart</button>
+        </div>
+
+        <div class="cake-item">
+            <h3>Fresh Fruit Cake</h3>
+            <p>A delightful cake adorned with fresh fruits.</p>
+            <img src="fresh-fruit-cake.jpg" alt="Fresh Fruit Cake">
+            <p class="price">$30.00</p>
+            <button onclick="addToCart('Fresh Fruit Cake')">Add to Cart</button>
+        </div>
+
+        <div class="cake-item">
+            <h3>Birthday Cake</h3>
+            <p>Celebrate birthdays with this special cake.</p>
+            <img src="birthday-cake.jpg" alt="Birthday Cake">
+            <p class="price">$35.00</p>
+            <button onclick="addToCart('Birthday Cake')">Add to Cart</button>
+        </div>
+
+        <div class="cake-item">
+            <h3>Anniversary Cake</h3>
+            <p>Perfect for celebrating years of togetherness.</p>
+            <img src="anniversary-cake.jpg" alt="Anniversary Cake">
+            <p class="price">$40.00</p>
+            <button onclick="addToCart('Anniversary Cake')">Add to Cart</button>
+        </div>
+        <!-- Add more cake items as needed -->
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Nitha's Home Baked Cakes. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
